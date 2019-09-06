@@ -2,16 +2,18 @@
 
 <%= form_for :post, url: posts_path do |f| %>
   <p>
+    <!-- field to enter the title -->
     <%= f.label :title %><br>
     <%= f.text_field :title %>
   </p>
-
   <p>
+    <!-- field to enter the body -->
     <%= f.label :body %><br>
     <%= f.text_field :body %>
   </p>
 
   <p>
+    <!-- send button -->
     <%= f.submit %>
   </p>
 
