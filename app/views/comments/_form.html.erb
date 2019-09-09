@@ -1,0 +1,16 @@
+<%= form_for([@post, @post.comments.build]) do |f| %>
+<p>
+  <!-- field to enter the title -->
+  <%= f.label :name %><br>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <!-- field to enter the body -->
+  <%= f.label :body %><br>
+  <%= f.text_field :body %>
+</p>
+<p>
+  <!-- send button -->
+  <%= f.submit %>
+</p>
+<% end %>
