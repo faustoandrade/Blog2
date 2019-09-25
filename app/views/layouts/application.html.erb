@@ -39,11 +39,11 @@
       <div id="main_content">
         <div id="header">
           <% if current_page?(root_path) %>
-            <p>All Posts</p>
+            <p><b>All Posts</b></p>
           <% elsif current_page?(about_path) %>
-            <p>About</p>
+            <p><b>About</b></p>
           <% else %>
-            <%= link_to "Back to All Posts", root_path %>
+            <b><%= link_to "Back to All Posts", root_path %></b>
           <% end %>
           <% if user_signed_in? %>
           <div class="buttons">
