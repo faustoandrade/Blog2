@@ -29,17 +29,18 @@ a {
 	color: inherit;
 }
 
+// menu de la isquierda
 #sidebar {
-	width: 250px;
+	width: 200px;
 	position: fixed;
 	left: 0;
 	top: 0;
 	height: 100%;
-	background: #f5f7f9;
-	padding: 7em 0 0 0;
-	border-right: 1px solid #d6dce0;
+	background: #2ea2f0; // azul claro
+	padding: 10em 0 0 0;
+	border-right: 1px solid #63d6ff; // linea vertical del sidebar
 	#logo {
-		width: 40px;
+		width: 70px;
 		position: absolute;
 		right: 3em;
 		top: 3em;
@@ -47,50 +48,53 @@ a {
 	ul {
 		list-style: none;
 		text-align: right;
-		padding-right: 3em;
+		padding-right: 4em; // posición del sidebar
 		.category {
 			font-weight: 700;
 			font-size: 0.7em;
 			text-transform: uppercase;
-			color: #33acb7;
+			color: #025ce3; // titulos (website social) azul ocuro
 		}
+
+		// blog about twitter ...
 		li {
 			padding: .5em 0;
 			a {
-				color: #9eafba;
+				color: #ffffff;
 				text-decoration: none;
 				transition: all .4s ease;
 				&:hover {
-					color: #33acb7;
+					color: #000000;
 				}
 			}
 		}
 		.active {
 			a {
-				color: #33acb7;
+				color: #b50f0d;
 			}
 		}
 	}
 	.sign_in {
 		position: absolute;
-		right: 3em;
-		top: 80%;
+		right: 5em;
+		top: 75%; // posición del admin login
 		font-size: .8em;
-		color: #9eafba;
+		color: #ffffff;
 	}
 }
 
 .button {
 	outline: none;
-	background: transparent;
-	border: 1px solid #d6dce0;
+	background: transparent; // color de los botones
+	border: 1px solid #63d6ff; // borde de los botones log in superior y sign up
+	color: #025ce3;
 	padding: .5em 1.5em;
 	border-radius: 1.5em;
 	&:hover {
-		border: 1px solid #33acb7;
-		color: #33acb7;
+		border: 1px solid #ffffff; // borde de los botones blanco
+		color: #025ce3;
 		a {
-			color: #33acb7 !important;
+			color: #000000 !important; //
 		}
 	}
 }
@@ -104,17 +108,19 @@ a {
 }
 
 #main_content {
-	margin-left: 250px;
+	margin-left: 200px;
+	background: #2ea2f0; //  cuerpo del blog color azul claro
+
 	#header {
 		padding: 1em 3em;
-		border-bottom: 1px solid #d6dce0;
-		background: #f5f7f9;
-		color: #9eafba;
+		border-bottom: 1px solid #63d6ff; // linea horizontal
+		background: #2ea2f0; // barra superior log out azul claro
+		color: #025ce3; // titulo barra superior azul oscuro
 		p {
-			display: inline;
+			display: inline; // ancho de la barra superior
 		}
 		a {
-			color: #9eafba;
+			color: #025ce3; // letra barra superiror log in azul oscuro
 			text-decoration: none;
 		}
 		.buttons {
@@ -128,16 +134,16 @@ a {
 	}
 	.post_wrapper {
 		padding: 3em;
-		border-bottom: 1px solid #d6dce0;
+		border-bottom: 1px solid #63d6ff; // lineas horizontales all posts
 		.title {
 			margin: 0;
 			a {
 				font-weight: 500;
 				text-decoration: none;
-				color: #2a2f35;
+				color: #ffffff; // color de los posts
 				font-size: 1.5em;
 				&:hover {
-					color: #33acb7;
+					color: #000000; // color de los posts
 				}
 			}
 		}
@@ -147,7 +153,8 @@ a {
 		}
 	}
 	#post_content {
-		padding: 1em 3em;
+		padding: 5% 0%;
+		margin-left: 200px;
 		.title {
 			font-weight: 500;
 			text-decoration: none;
@@ -209,7 +216,7 @@ a {
 	#page_wrapper {
 		padding: 3em;
 		#profile_image {
-			width: 300px;
+			width: 200px;
 			float: left;
 			margin-right: 2em;
 			img {
@@ -237,11 +244,11 @@ a {
 	}
 	input[type="text"], input[type="email"], input[type="password"], textarea {
 		width: 90%;
-		border: 1px solid #d6dce0;
+		border: 1px solid #63d6ff;
 		border-radius: .35em;
 		margin-top: 10px;
 		padding: .5em 1em;
-		line-height: 1.75;
+		line-height: 2.75;
 	}
 	input[type="text"] {
 		height: 35px;
@@ -249,17 +256,20 @@ a {
 	textarea {
 		min-height: 180px;
 	}
+
+	// boton create comment
 	input[type="submit"] {
 		outline: none;
-		background: transparent;
-		border: 1px solid #d6dce0;
+		background: transparent; // color del boton login inferior
+		border: 1px solid #63d6ff; // borde del boton login inferior
+		color: #025ce3;
 		padding: .5em 1.5em;
 		font-size: 1.1em;
 		border-radius: 1.5em;
 		margin-left: .5em;
 		&:hover {
-			border: 1px solid #33acb7;
-			color: #33acb7;
+			border: 1px solid #ffffff;
+			color: #000000;
 		}
 	}
 }
